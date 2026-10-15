@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Knowledge &amp; Self-Service" section_id="0a1ed7e8607b03107f44caca4178d4a4" sys_domain="global" table="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" version="3" view="case">
+        <sys_ui_section action="DELETE">
+            <caption>Knowledge &amp; Self-Service</caption>
+            <header>false</header>
+            <name>x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-05 04:35:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a1ed7e8607b03107f44caca4178d4a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+            <sys_update_name>sys_ui_section_0a1ed7e8607b03107f44caca4178d4a4</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-05 04:35:04</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Case" name="case">e6d985c378c747107f444c47dad882d2</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</application>
+        <file_path/>
+        <instance_id>f139e77a9397c714b060fcb86cba10ca</instance_id>
+        <instance_name>act-hck-4161-0026</instance_name>
+        <name>sys_ui_section_0a1ed7e8607b03107f44caca4178d4a4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Knowledge &amp; Self-Service" section_id="0a1ed7e8607b03107f44caca4178d4a4" sys_domain="global" table="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" version="3" view="case"><sys_ui_section action="INSERT_OR_UPDATE"><caption>Knowledge &amp; Self-Service</caption><header>false</header><name>x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-05 04:35:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0a1ed7e8607b03107f44caca4178d4a4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction</sys_name><sys_overrides/><sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package><sys_policy/><sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope><sys_update_name>sys_ui_section_0a1ed7e8607b03107f44caca4178d4a4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-05 04:35:04</sys_updated_on><sys_user/><title>false</title><view display_value="Case" name="case">e6d985c378c747107f444c47dad882d2</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1117245192</payload_hash>
+        <record_name>Bank of Paradise - Failed Transaction</record_name>
+        <reverted_from/>
+        <source>a45a0dc0a5f303107f4419930714447d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 04:57:20</sys_created_on>
+        <sys_id>d433e36860fb03107f44caca4178d49b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a10a6c6d5e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 04:57:20</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>5833e3686ffb03107a79ef85ae16989a</update_guid>
+        <update_guid_history>5833e3686ffb03107a79ef85ae16989a:1117245192,df1e5be8967b03107602758834498cac:-230192330</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 04:58:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>205754995aec48a98428c955120bfd31</sys_id>
+        <sys_metadata>0a1ed7e8607b03107f44caca4178d4a4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Knowledge &amp; Self-Service</sys_name>
+        <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+        <sys_parent display_value="Bank of Paradise - Failed Transaction">94fe010ca53703107f441993071444ce</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_scope_delete display_value="">8657da9623ae4730af44d75adb618c90</sys_scope_delete>
+        <sys_update_name>sys_ui_section_0a1ed7e8607b03107f44caca4178d4a4</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_0a1ed7e8607b03107f44caca4178d4a4">d433e36860fb03107f44caca4178d49b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 04:58:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

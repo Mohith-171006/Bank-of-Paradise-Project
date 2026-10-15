@@ -4,7 +4,7 @@
         <can_delegate>true</can_delegate>
         <description>Default user role</description>
         <elevated_privilege>false</elevated_privilege>
-        <federated_id/>
+        <federated_id>N0A4pljkLzK/4Es6yArl+mgPcbf1jzvaVu8ZEUjJqT0=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_snc_bank_of_pa_0.user</name>

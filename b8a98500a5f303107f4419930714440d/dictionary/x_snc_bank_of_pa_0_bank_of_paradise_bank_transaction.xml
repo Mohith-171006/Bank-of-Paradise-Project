@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="fcdba984a53b03107f4419930714446b" label="Bank of Paradise - Bank Transaction" max_length="40" name="x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction" type="collection">
+        <element label="Bank Account" mandatory="true" max_length="32" name="bank_account" reference="x_snc_bank_of_pa_0_bank_of_paradise_bank_account" type="reference"/>
+        <element label="Merchant" max_length="100" name="merchant" type="string"/>
+        <element display="true" label="Transaction ID" mandatory="true" max_length="30" name="transaction_id" type="string"/>
+        <element label="Amount" mandatory="true" max_length="20" name="amount" type="currency"/>
+        <element choice="1" label="Transaction Type" mandatory="true" max_length="40" name="transaction_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ATM" sequence="500" value="atm"/>
+                <element inactive_on_update="false" label="Card" sequence="200" value="card"/>
+                <element inactive_on_update="false" label="POS" sequence="600" value="pos"/>
+                <element inactive_on_update="false" label="UPI" sequence="100" value="upi"/>
+                <element inactive_on_update="false" label="NEFT" sequence="300" value="neft"/>
+                <element inactive_on_update="false" label="IMPS" sequence="400" value="imps"/>
+            </choice>
+        </element>
+        <element choice="1" label="Transaction Status" mandatory="true" max_length="40" name="transaction_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Reversed" sequence="500" value="reversed"/>
+                <element inactive_on_update="false" label="Successful" sequence="100" value="successful"/>
+                <element inactive_on_update="false" label="Pending" sequence="300" value="pending"/>
+                <element inactive_on_update="false" label="Unauthorized" sequence="400" value="unauthorized"/>
+                <element inactive_on_update="false" label="Failed" sequence="200" value="failed"/>
+            </choice>
+        </element>
+        <element label="Reference Number" max_length="50" name="reference_number" type="string"/>
+        <element choice="1" label="Dispute Status" mandatory="true" max_length="40" name="dispute_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="None" sequence="100" value="none"/>
+                <element inactive_on_update="false" label="Rejected" sequence="500" value="rejected"/>
+                <element inactive_on_update="false" label="Raised" sequence="200" value="raised"/>
+                <element inactive_on_update="false" label="Under Investigation" sequence="300" value="under_investigation"/>
+                <element inactive_on_update="false" label="Resolved" sequence="400" value="resolved"/>
+            </choice>
+        </element>
+        <element label="Card" max_length="32" name="card" reference="x_snc_bank_of_pa_0_bank_of_paradise_bank_card" type="reference"/>
+        <element label="Transaction Date" mandatory="true" max_length="40" name="transaction_date" type="glide_date_time"/>
+        <index name="index">
+            <element name="card"/>
+        </index>
+        <index name="index2">
+            <element name="bank_account"/>
+        </index>
+    </element>
+</database>

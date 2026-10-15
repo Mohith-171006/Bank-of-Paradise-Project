@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="14da7184a5bb03107f441993071444c7" extends="sn_customerservice_case" label="Bank of Paradise - Card &amp; Security" max_length="40" name="x_snc_bank_of_pa_0_bank_of_paradise_card_security" type="collection">
+        <element choice="1" label="Security Issue" mandatory="true" max_length="40" name="security_issue" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Stolen Card" sequence="200" value="stolen_card"/>
+                <element inactive_on_update="false" label="Lost Card" sequence="100" value="lost_card"/>
+                <element inactive_on_update="false" label="Suspicious Activity" sequence="300" value="suspicious_activity"/>
+                <element inactive_on_update="false" label="Other" sequence="600" value="other"/>
+                <element inactive_on_update="false" label="Compromised Card" sequence="400" value="compromised_card"/>
+                <element inactive_on_update="false" label="Card Block Request" sequence="500" value="card_block"/>
+            </choice>
+        </element>
+        <element label="AI Intent" max_length="100" name="ai_intent" type="string"/>
+        <element label="Routing Reason" max_length="500" name="routing_reason" type="string"/>
+        <element choice="1" label="Validation Status" mandatory="true" max_length="40" name="validation_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="100" value="pending"/>
+                <element inactive_on_update="false" label="Passed" sequence="200" value="passed"/>
+                <element inactive_on_update="false" label="Failed" sequence="300" value="failed"/>
+                <element inactive_on_update="false" label="Verification Required" sequence="400" value="verification_required"/>
+            </choice>
+        </element>
+        <element label="Card" mandatory="true" max_length="32" name="card" reference="x_snc_bank_of_pa_0_bank_of_paradise_bank_card" type="reference"/>
+        <element label="AI Summary" max_length="4000" name="ai_summary" type="string"/>
+        <element label="Validation Details" max_length="4000" name="validation_details" type="string"/>
+        <element label="Bank Account" mandatory="true" max_length="32" name="bank_account" reference="x_snc_bank_of_pa_0_bank_of_paradise_bank_account" type="reference"/>
+    </element>
+</database>

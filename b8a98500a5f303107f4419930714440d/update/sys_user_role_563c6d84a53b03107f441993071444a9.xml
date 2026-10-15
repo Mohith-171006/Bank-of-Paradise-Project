@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>nDRRQT0nih3YPFb/qcmCPq7cyyJ+MTbROy3ywlPCLi4=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_snc_bank_of_pa_0.bank_of_paradise_bank_transaction_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>bank_of_paradise_bank_transaction_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-03 07:00:36</sys_created_on>
+        <sys_id>563c6d84a53b03107f441993071444a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_bank_of_pa_0.bank_of_paradise_bank_transaction_user</sys_name>
+        <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name>sys_user_role_563c6d84a53b03107f441993071444a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-03 07:00:36</sys_updated_on>
+    </sys_user_role>
+</record_update>

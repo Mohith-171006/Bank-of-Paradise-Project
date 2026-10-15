@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7ba8a9cca5f703107f441993071444fd" label="Bank of Paradise - Bank Card" max_length="40" name="x_snc_bank_of_pa_0_bank_of_paradise_bank_card" type="collection">
+        <element choice="1" label="Card Type" mandatory="true" max_length="40" name="card_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Debit" sequence="100" value="debit"/>
+                <element inactive_on_update="false" label="Credit" sequence="200" value="credit"/>
+            </choice>
+        </element>
+        <element label="Bank Account" mandatory="true" max_length="32" name="bank_account" reference="x_snc_bank_of_pa_0_bank_of_paradise_bank_account" type="reference"/>
+        <element choice="1" label="Security Status" mandatory="true" max_length="40" name="security_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Compromised" sequence="300" value="compromised"/>
+                <element inactive_on_update="false" label="Normal" sequence="100" value="normal"/>
+                <element inactive_on_update="false" label="Suspicious" sequence="200" value="suspicious"/>
+            </choice>
+        </element>
+        <element display="true" label="Card Number Masked" mandatory="true" max_length="20" name="card_number_masked" type="string"/>
+        <element choice="1" label="Card Status" mandatory="true" max_length="40" name="card_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Blocked" sequence="200" value="bocked"/>
+                <element inactive_on_update="false" label="Active" sequence="100" value="active"/>
+                <element inactive_on_update="false" label="Expired" sequence="300" value="expired"/>
+                <element inactive_on_update="false" label="Stolen" sequence="500" value="stolen"/>
+                <element inactive_on_update="false" label="Lost" sequence="400" value="lost"/>
+            </choice>
+        </element>
+        <element label="Customer" mandatory="true" max_length="32" name="customer" reference="csm_consumer" type="reference"/>
+        <index name="index">
+            <element name="customer"/>
+        </index>
+        <index name="index2">
+            <element name="bank_account"/>
+        </index>
+    </element>
+</database>

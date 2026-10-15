@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=718284000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automates banking case intake, validation, intelligent routing, operational task handling, and escalation for Bank of Paradise customer cases.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>bop__case_intake_orchestrator</internal_name>
+        <label_cache>[{"name":"Created_1.current.number","label":"Trigger - Record Created➛Bank of Paradise - Failed Transaction Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction","column_name":"number","usedInstances":{"2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53":["condition"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Bank of Paradise - Failed Transaction Record","reference":"x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction","reference_display":"Bank of Paradise - Failed Transaction","type":"reference","base_type":"reference","usedInstances":{},"attributes":{}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Case Table","reference":"sn_customerservice_case","reference_display":"Case","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"8686e413-1597-4611-9e78-4313572ca7f5.Record.bank_account.sys_id","label":"2 - Look Up Record➛Bank of Paradise - Failed Transaction Record➛Bank Account➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","column_name":"sys_id","usedInstances":{"00909742-aba5-46d2-88b0-d24e20025d86":[null]}},{"name":"8686e413-1597-4611-9e78-4313572ca7f5.Record.transaction.sys_id","label":"2 - Look Up Record➛Bank of Paradise - Failed Transaction Record➛Transaction➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction","column_name":"sys_id","usedInstances":{"7ac47283-c8dc-42a0-80ea-dd88d3c51098":[null]}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Bank of Paradise - Failed Transaction Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction","column_name":"sys_id","usedInstances":{"8686e413-1597-4611-9e78-4313572ca7f5":[null]}},{"name":"00909742-aba5-46d2-88b0-d24e20025d86.Record.account_status","label":"3➛Bank of Paradise - Bank Account Record➛Account Status","reference":"","reference_display":"Account Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","column_name":"account_status","choices":[{"label":"-- None --","sequence":-1.0,"used":false,"reference":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"sequence":100.0,"used":false,"label":"Active","reference":false,"image":"","rawLabel":"Active","selected":false,"missing":false,"value":"active","parameters":{"name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","dependent_values":[""],"dependent_values_map":{"":"Active"}}},{"sequence":200.0,"used":false,"label":"Blocked","reference":false,"image":"","rawLabel":"Blocked","selected":false,"missing":false,"value":"blocked","parameters":{"name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","dependent_values":[""],"dependent_values_map":{"":"Blocked"}}},{"sequence":300.0,"used":false,"label":"Dormant","reference":false,"image":"","rawLabel":"Dormant","selected":false,"missing":false,"value":"dormant","parameters":{"name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","dependent_values":[""],"dependent_values_map":{"":"Dormant"}}},{"sequence":400.0,"used":false,"label":"Closed","reference":false,"image":"","rawLabel":"Closed","selected":false,"missing":false,"value":"closed","parameters":{"name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","dependent_values":[""],"dependent_values_map":{"":"Closed"}}}],"usedInstances":{"b7df2a53-de34-4768-bff4-86560399a81c":["condition"]}},{"name":"7ac47283-c8dc-42a0-80ea-dd88d3c51098.Record.transaction_id","label":"5➛Bank of Paradise - Bank Transaction Record➛Transaction ID","reference":"","reference_display":"Transaction ID","type":"string","base_type":"string","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction","column_name":"transaction_id","usedInstances":{"708a1dca-4161-4dbb-88f0-b75ffec2a13b":["condition"]}},{"name":"8686e413-1597-4611-9e78-4313572ca7f5.Record","label":"2 - Look Up Record➛Bank of Paradise - Failed Transaction Record","reference":"x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction","reference_display":"Bank of Paradise - Failed Transaction","type":"reference","base_type":"reference","usedInstances":{"f91d59f4-2934-477e-8760-fefe51016517":["record"],"07398b70-2379-4b45-ad74-42d96c6cecf2":["record"],"4f9cae59-a935-4530-ad7d-9ce64ed75d9e":["record"],"3c574cf5-8efc-40c8-b31f-0b527a1eadb7":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>6610147740f703107f44ffe0597fe261</master_snapshot>
+        <master_snapshot_digest/>
+        <name>BOP - Case Intake Orchestrator</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>ba10147740f703107f44ffe0597fe2d3</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 08:23:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c41c1d45307f03107f44f54bcdda0213</sys_id>
+        <sys_mod_count>60</sys_mod_count>
+        <sys_name>BOP - Case Intake Orchestrator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name>sys_hub_flow_c41c1d45307f03107f44f54bcdda0213</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:20</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>d710547740f703107f44ffe0597fe216</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c41c1d45307f03107f44f54bcdda0213"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c41c1d45307f03107f44f54bcdda0213"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>true</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba10147740f703107f44ffe0597fe2d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:20</sys_updated_on>
+        <table>x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"true"}</data>
+        <identifier>c41c1d45307f03107f44f54bcdda0213</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:20</sys_created_on>
+        <sys_id>b210147740f703107f44ffe0597fe2d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:20</sys_updated_on>
+        <trigger display_value="">ba10147740f703107f44ffe0597fe2d3</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c41c1d45307f03107f44f54bcdda0213^sys_idNOT INb210147740f703107f44ffe0597fe2d5"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c41c1d45307f03107f44f54bcdda0213"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c41c1d45307f03107f44f54bcdda0213^sys_idNOT IN0c1c1d45307f03107f44f54bcdda0216"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c41c1d45307f03107f44f54bcdda0213</id>
+        <name>BOP - Case Intake Orchestrator</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 08:23:54</sys_created_on>
+        <sys_id>0c1c1d45307f03107f44f54bcdda0216</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 08:23:54</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0c1c1d45307f03107f44f54bcdda0216"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c41c1d45307f03107f44f54bcdda0213^sys_idNOT IN3c8c5985307f03107f44f54bcdda02ae,ac8c5985307f03107f44f54bcdda0269"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</model>
+        <model_id>c41c1d45307f03107f44f54bcdda0213</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c41c1d45307f03107f44f54bcdda0213</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 08:25:52</sys_created_on>
+        <sys_id>3c8c5985307f03107f44f54bcdda02ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 08:34:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3c8c5985307f03107f44f54bcdda02ae"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</model>
+        <model_id>c41c1d45307f03107f44f54bcdda0213</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c41c1d45307f03107f44f54bcdda0213</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 08:25:51</sys_created_on>
+        <sys_id>ac8c5985307f03107f44f54bcdda0269</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 08:34:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ac8c5985307f03107f44f54bcdda0269"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c41c1d45307f03107f44f54bcdda0213"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c41c1d45307f03107f44f54bcdda0213"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c41c1d45307f03107f44f54bcdda0213^sys_idNOT IN548cd9cd303f03107f44f54bcdda027b"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 08:25:50</sys_created_on>
+        <sys_id>548cd9cd303f03107f44f54bcdda027b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-13 08:55:55</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY2W7jNhT9FUJPLeAAWuw4zttMFjTAdNLanvYhSAVKJG1haNIjUUrcQf69l1psWYuX2J56ngxxPffw3HNJP303OPYoN66NMfY4NTpGIBQNBebjxZxCs9LNrsAz3TfDgmAlw4VxrcKYdgwWytmYzuYcKxjMMI+gUYaEhsa11TESzGM6WkQPBFaC+eky+ZpG3g3fr24kfNfD4qsrmTvHrln6CDEJIuoyHHBKXBViEWFfBVLAAtADWy/+ytf5CJOQZOiPfBK6QPfpNDRem+ZPA05CKozrp+eOobeYUaUhf690BRq3z3w8sKnpO5Zj26ZpX3Ut79LxLJs4mJomLFjlsBKnaqByRRJ9VVQQSpb81VgOKSaPgi+WI6ZwSBmjM/waBf/C6lemHscoYPdp1rf8dHOesmZ/KgOfPs5TMtKWDGfWKXk8E58z/JphynDMVcEwtMRwGITONWQNIkfERlP5Miw2vA9EGl3eyaWP+fILKxUGXqxopAlnAQfq3YybSMZhin54d/M4vHX//jC++e1u6A7vRuPhw8347tZ4S+Nyv8V6xQxhjsXNwnlbyuI+oFwfoIhnHqDpGJEfBnP1AWSQFGp966wy4EYKEuQSqWSBX3RF61lQRL8pDUyzNRH80o5FMvxz92dd2Vnjfrq9vMSYUNyiW4+VdFuOvAGaaiChHN0mBectu0i4a5r/k4hzM3uvhl+wUJGrpIsJcUssQcrDwjpESSi/Xe0H7cFkArIPxDxW0VZRZ7G9bVVwGAuY4C7Po67jlLYlf5+CCNA8QRaO6Lc4I/0CLIkVVOX42ad8g2EskBTIj0PgSCE4ZlRshlKQWhrsYYYnOdGwMKe+KmmDfYnKX78HURSISSmYNizpgDoYvigjKiz3EAzPx0zx+pEk69xWMn3vNLcsxjzKbLOvk9wyHY9ZZt/sYUYc0/TtUprXsbSCVBW9nCTd90v2KFUq3+Hwk4picvBmOVV2UnLlqAoStEJyT7k5DjTrSNBsDa3ijc5e5lgAy5tv19W5KbQjXwwwSTDMIEWM7yj820u+Fj7j8gWM+HCzZDKkk1DGglRdSm+BAvhdG3Eam/Sw/3UzitUI9Et+zL+em2WuDqUQOhaLI7ilwyxvQLvUBJN0wB+93mDg+dhmrH/Zp7ZVccsVjEZsP4VLbjn2pEk3bY7ZKOSkSf97eOUBAGu+uTfAwx0zF2ajX2Z9Z+CMO/jgy5QKF6CGLtdOV7PDCQ8ILfqOm+21rZNVfh+a8exq4Pesft/vwxMIMp51qYetrt3Dg/6lc9WrZHwNyiaYqoGZH/IwihZRCqTFDb5kXef10j+lbCOqlC5HB9fwdDrO9iuVT31CKPUXGSLNLnpYDUQjCsUwfSmfqqZLNa1Vc0DyEdrXkOi74mcpLhrQnfBlJuDtsAtxLcjO7e5RUVSyfggHv9do96o3YE6zH7FBkx+twLTDPPu7yI5SSFpF1XQp2TUxk8b8br1FvCO3KjIpXy823H+ORYp1dFLs05HiHHznKnKx9ZH6HrA/Ub1LLyFHK3pSUFeyRtsOGMr/q6QEeQukphS45XDLhp2RhnHCupLdnmtVD5pRfvk5WUHTZ1Il5VYi6EDhD6HlNFWtopvjvq0p6eNez2m5aQ+qb+smQFvwnn2N21siSZPiNha6/datrtlY6koJta6IHYvYUaNurmSHRd1Yy7ZFfXiV2vTPQAOKM60/z/8BiGSBBSUgAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=c41c1d45307f03107f44f54bcdda0213^sys_idNOT INb22caad905b703107f4442f8daf9323a,51543a6565b303107f4465ea6b83687c,ddddae1505bb03107f4442f8daf9321b,30d1361d05bb03107f4442f8daf932c7,fb3fa6e9657303107f4465ea6b8368c7,c2fed72965f703107f4465ea6b8368ac,99ac4557e57703107f44a85fbcd507fa"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 08:52:23</sys_created_on>
+        <sys_id>b22caad905b703107f4442f8daf9323a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:56:57</sys_updated_on>
+        <ui_id>8686e413-1597-4611-9e78-4313572ca7f5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXW2/iOBT+K1GegU0IEOjbDhXSSLPT1bTbl9mR5cROscbYGdtpSxH/fY9zg4EUyBRWXe1T5ONjn9v3neN8XbmMuFfukHiTZDIZjkPPCwLPG42CGPtRFIziyIsi3+24Ai8oaGqpDDLLlILoEfOslmEdg4gwnXK8vC93sGOk8wLyeM44UVS4V1+/ddwUK7jNUOVerXa2TnWH44hyUL0F285d4U+Di/nnCmxIFlfrT+XRaSWUilhXgo5Lnw0VhIIPCeaadtwFFgQbqZa1RFFMbgTfCOZMGLjNtcrPmr2AvaBv9RIKUcW02KuXqExRIU6uscG3RmWxyVSpWjirIR+rOsw6kQ05L9331p2N/ovVx7v6hG4f8NeQb0ITnHEz/TWbflubfWuzCPAmNUxC1d3A1gVHvApf8mwhPhe1dGsP7xvAVuxcv4K5TEOyaWoLaitUliu5ncunL1U1ZkzkfpWbXMaY1ytsjGJRZmxeVm5CUMIoJ4gJzoS1BGWz8KGcLsACWuA0ZeIBpUo+svxWiGXRe+Cw6CVcPtlcsAfRw7GNvAfAwr0ZyK9z8T1WzGbhD7gGDneswTkcLe0hHSuWGvTEyAM1G+uVFpHmCfPvTfsl4lBVqDw8d91x9VJPOdZ6k2yAKfqR2RwUqS+zh/JC5UdyL36HCB5pmSiLgZy2/kHaYrJD0aLQW3jZ7x+tO8cJLlRZuLGIdKLla16VraOoea7xc/uY2Q3nc7FRwftsLWTsnaeFNFF8n4KtGLhPLQu1NzDrggRqYmx74Be5OYb+ycGhNdngjCVoAflkKadI0RiwoxFWFCUyEwQVwW3RwiY7YUqbUnmfJl8olF44EjDlmDl1cm2n1m5JoeNxVBT6mDhVIKU17UAgTh6IUwfSLuw2I3twNr4NzsS3zTicYcbzamhD061yUqWkemVsHynkAUScONNPdMo/q1NvH/pNFGgc/kd8PfOT4DKN6/yDOaY4GvTxKAx83/N8j4TeOAz98ShKRjgcJBuOIqRFDG8JuDkBqMD1qIJGVWdvv/8UD4q2jeYEryoIXkvxd+Z5/dA41i2or1O5ddzxsqFEUnKKxU5HuYOJ8Nus9L/E6/DddZV/ZYq/lQ0Zu9vNdCFqzPWlhn7G/hLsR0Y/WoiNqdcf+yTujkM/7A4SMupOCB528SQahgGh8SC5xEOYDA++QreeArEUhNm49PZ/01IjRizgA7JaTQFohhLk9+JMQU1Mr9hfr/eJ2OJkO66eEFHF1el2SE1hVgN+V/ap6YJqIJ2Rkt5/iZTv8ml9oRc0OfjyxIMNnorrNox5zrt/hMV3JBOUYuRtLRSGotJ8LAAZjMJC14/NHf58gEOOTJw/y0NO15nlx5y7n461JM/xuCry3JWB7cRZUiZfNv2L5sd2/kW9/+e/6Pt804FDjANCUFFCLTOVp/IRxTzT+cYWwM43kb79A1tKRbriFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b22caad905b703107f4442f8daf9323a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>708a1dca-4161-4dbb-88f0-b75ffec2a13b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 04:06:31</sys_created_on>
+        <sys_id>51543a6565b303107f4465ea6b83687c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:56:57</sys_updated_on>
+        <ui_id>07398b70-2379-4b45-ad74-42d96c6cecf2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWTU/jMBD9K5HPbZU06eeeFqpKK7EUwYoLZaNJ7BRrHSdrO0C36n/fceKULCAWJC6I3jwzz3lvMm/Sqx3hlMxJxKgfzIJxGgZhOPT94TQKknGYBEMaAmMB6REJOcNKxdJCUTzfgqhsYLebjqdjFgVhPxjNJv1oHAT9GZtM+xFeNpoMU5hko8F5jdvvEUm5LgVsL90FGElvuKCKSTK/uu6REhQ+yzBF5rtHqdeSFZAwgaXnLdvH7M22tGdapFXOpIl5GzxxyIXLeN8WmEGQpRP4PcLuDZOUIZEMhGY9koOkYAq1JXOjKgwoBnQlxfZQccOlaYTmcK/5H3xy5Nu6jKGy1DXhcIxdg5pwtgADF3hzaip16FfBU6abnlCWQSXMcTfWFKxKwwvZQAwkokUXosrladMRcrig8z4qjSRYaXVa5o2s7OKmuDtvSS65rFviJIoiBXE4gTGKJ5WxdHaECVb3OIey5HITl6q45TUYqeSDjcDDIBPFHT5T840cQGp5D7CrMFhifFGHL0FxK+I7XoPgfY/orT4WoPWDFOxh/LuyTBphTkJcd6FuQVxPggWnipfmKz7qljni+56zQzJ6acLS2cNAde58sMR9rGUaJyB/xUUWlxD7nYMCfL0szoALRmOjQOpG71NnHCHIKzLvzIG8vresYd6Pf2Bvs88rxLX2+VEPzfNinYOexE66WO+0STj/jN7NP9OP5B8n48Mb6H+28YcvLubOJNVO0R3LIAlkWKvcqKIq15Xvh3S3bi2xJvM1OVqdoQXOYGvrtLdCFWCF6jXprZur6rpkMh3OZvhF8sPMDwN/kkVRNoqSlFLwh+OsLkftuPVfWb//iaSM7T0Opy5kQ8+ZseNhD0lwbDujXzyLsNniOcaDp27/jC142+Z6xXy1m2vJmaD6mYFr1xbLsaeGxc0APlpdLulduuTh8/9u+ysY+/XvA22xT/Mv4PovoSuiRBYLAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=51543a6565b303107f4465ea6b83687c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 08:59:38</sys_created_on>
+        <sys_id>ddddae1505bb03107f4442f8daf9321b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:56:57</sys_updated_on>
+        <ui_id>00909742-aba5-46d2-88b0-d24e20025d86</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX227jNhD9FUHPtitZtmXnbZsgwALbTZGkedkuCEqkEmJpUktSSRzD/94hJVmurfjSKEWKPgkcDjm3c2aob0ufEf/MH5Ngls1m42kcBFEUBJNJlOIwSaJJmgRJEvo9X+A5BU0tlUFmkVMQPWJerGVYpyAiTOccL+6qHewZ6b2APH1gnCgq/LNv33t+jhXcZqjyz5ZbW8e6w3FCOajegG3vtvSnxUX3OQMbkqX1+kt19LwWSkWsK1HPp8+GCkLBhwxzTXv+HAuCjVSLtURRTK4EbwQPTBi4zbfKz5q9gL1oaPUyClGltNxbL1GVolKcXWCDb4wqUlOoSrV0VkM+lusw14lsyXnlfrDqNfovVh9v6xO6eSBcQb4JzXDBzfk/sxmeanNobZYBXuWGSai6H9m64ITX4UtezMXXspb+2sO7FrCVOxevYK7QkGya24LaClXlym4e5NN1XY1LJpxf1SaXKebrFTZGsaQwNi9LPyMoY5QTxARnwlqCsln4UE7nYAHNcZ4zcY9yJR+ZuxVimQ/uOSwGGZdPNhfsXgxwaiMfALDw4BLkF058hxWzWfgNroHDPWvwAY5W9pBOFcsNemLknprGeq1FpHnC/EfbfoU4VBfKheever5e6HOOtW6SDTBFPwubgzL1VfaQK5Q74rz4BBE80ipRFgOOtuFe2mKyRdGy0Bt42e0fJ3eOI1yos3BlEekli9e8qlpHWXOn8ff2cWk3vK/lRg3vzlrINOimhbRRfJeCJzFwl1oWam9g1jsSqI2xpwO/zM0h9M/2Dq1ZgzOWoTnkk+WcIkVTwI5GWFGUyUIQVAa3QQub7IwpbSrlXZpcUyi98CRgyjMP1HPa3lr7RAodjqOm0OfMqwOprGkPAvFcIN46kNPCPmVkjzrj26gjvjXj8BIz7qqhDc03ykmVkuqVsX2gkHsQceRMP9KpsFOn3j702yjQOvwP+Nrxk+B9Glf3gzmlOBkN8SSOwjAIwoDEwTSOw+kkySY4HmUNRxHSIoW3BNycAVTgelRDo65zsNt/ygfFqY3mCK9qCF5I8WcRBMPYeNYtqK9Xu3XY8aqhJFJyisVWR7mFifDLZeV/hdfxh+sq/8oUfysbCna7nelS1Jrr9xr6BftDsJ8F/WwhNqXBcBqStD+Nw7g/ysikPyN43MezZBxHhKaj7D0ewmS89xW68RRIpSDMxqU3/5sWGjFiAR+R5XI6mU7oKIz64XgGMUzCsD+j8bQ/isJoHA9THGfjwbXrcIMEix8wSVOYqGZQXrNa7fK1ewOnMf+I/NTMP99MUFvS6ufCtuxL2wX1eOuQ4MF/ieIf8qHe7Xu8FjroNbWHVRtjVw1n9z578aiBX2m9oeuzGz2OGTJDOUbBxkJhwABFm7zZ5eOvsOvJzPu9Uvf6nhN9Wh84kV+HY6n5dVsFsxVbxSq3bPv5dce2fn6D/+fP78d8RIJDjANCUFlCLQvlUvmIUl5ot6Gw0NVfV3cj8PtfOs+/CFMWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ddddae1505bb03107f4442f8daf9321b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>b7df2a53-de34-4768-bff4-86560399a81c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 09:17:06</sys_created_on>
+        <sys_id>30d1361d05bb03107f4442f8daf932c7</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:56:57</sys_updated_on>
+        <ui_id>7ac47283-c8dc-42a0-80ea-dd88d3c51098</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXUW/iOBD+K1GegUsIEOjbXatKK+1tT22vL3sry4ntYq2xs7bTlqL+9xsnDrCQFrjCqad7QhmP7Zlvvm/GfF2EnIRn4ZBEEzaZDMdpFCVJFI1GSY7jLEtGeRZlWRx2QolnFDyN0hbZeUHB9IBFubRhk4OJcFMIPL/zKziwKngGez7lgmgqw7Ov3zphgTWcZqkOzxYbS/uGI3BGBbjewN3BbR1PS4jVzxncoXjefH/2W88bo9LEhZJ0QvpkqSQUYmBYGNoJZ1gSbJWeLy2aYnIlxcow5dLCaaFzfjL8Ge5L+s6PUcgqp/Xa8hN5iGozu8AW31hd5rbU3rUO1gAei2WaSyBbMPfhRy+dlf+z88eb/oSub4hfAG9CGS6FPf9nd8aH3tl3d9YJXhWWK6h6mLi64Ew06StRzuSXupbhMsK7FrLVKxevcK40ADYtXEFdhXy52M1UPV431bjksorLLwqVY7H8wtZqnpXW4bIIGUGMU0EQl4JLdxOUzdGHCjqDG9AMFwWX96jQ6oFXp0Ius969gI8eE+rRYcHvZQ/nLvMeEAv3LsF+UZnvsOYOhd/hGNjccRdOYau/D5lc88KiR07uqV3d3ngRZR+x+N627hmHmkJV6YUvndDMzbnAxqzABpqiH6XDoIbeo4eqQlVbqih+hQweqAfKcaCSbfymbDHZkGhd6DW+bPePgzvHHiE0KFw5RgbZ/LWofOuoa155/Nw+Lt1C8KVeaOh9tBYyjo7TQtokvi3BgxS4LS1HtXco64QCalPs4cSvsdnF/smbQ2uy4hlnaAZ48kJQpGkO3DEIa4qYKiVBdXJrsnBgM66N9c7bMrmmUHoZKOBUYKc0qLyDpfeBEtqdRyOhTyxoEvG3mQASCapEgmUih6V9yMgeHE1vgyPpbTUOLzEXVTWMpcVaOanWSr8ytncU8g1G7DnT9wwqPmpQ7x/6bRJoHf47Yj3yk+A0jev4gzmnOBv08ShN4jiK4oik0ThN4/EoYyOcDthKowgZmcNbAk5mQBU4HjXUaOocbfef+kFxaKPZI6qGghdK/lVGUT+1gQsL6hs0Ye0O3DeUTClBsdzoKLcwEX659PF7vg4/XFf5V6b4e9VQ8ttNpGtTK9anGvol/1PyHyX95Cg2plF/HJO8O07jtDtgZNSdEDzs4kk2TBNC8wE7xUOYDN98ha49BXIlCXd5mfX/TXODOHGET8hiMR6NR3QQJ914OIEcRnHcndB03B0kcTJM+zlO2bB3XXW4ntVYGg9UfcrLy7Zcj37+YbrfA51G9+fr8LRB1jwWNm2f2w5ohtsR5R39lwT+IZ/pJ3qNkzdfsXiw4lN93Ep9T9UkybD8jhRDBUbR2ofGUFRaG9bEsK2x38AjUCz4w28JukFluv1p04HC2Z1TI5xbn9RGjl4u1Wfbf9pq28Z/2uj/+Z/2Y74NISAugCGoLqFRpa6gfEC5KE21sEaw4022b38Dwcu6+yoWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=30d1361d05bb03107f4442f8daf932c7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>708a1dca-4161-4dbb-88f0-b75ffec2a13b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 03:44:18</sys_created_on>
+        <sys_id>fb3fa6e9657303107f4465ea6b8368c7</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:56:57</sys_updated_on>
+        <ui_id>f91d59f4-2934-477e-8760-fefe51016517</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K1ae2yrpd/u2UVWaxGACxAtj1q19Qy0cJ7MdoKv477tJ3JIBYiAhTWh9qXyvz/U5Jz7JxTZSMppHQ5RxMkvGYpAMBv047k+HyWo8WCV9OQDEJOpEBjKknRZFbiWtb0CXVWG7nY6nYxwmg24ymk26w3GSdGc4mXaHNGw06QuYpKPeSY27vyekVK7QsDkPA6gi1kpLiyaaX1x2ogIsneXRRvPto9ZryWpYoaatJzu2j9n7TVGtZS7KDI3nalc8DMhF6LAvC+oQqKKTxJ0I7zwaiUQkBe2wE2VgJPjcbqK5tyUVLII8Nnqz37FWxjdCM7hz6hedPIyrfSmSMhFM2C95MKgppwvwcEqThS/t3q9cCXSNJxJTKLU/aNeaDceFV7lpIB5WeofOdZmZo8aRaD+g9TxKRySwqHRWzBtZ6ek6vz3ZkVwqU1sSJOpcgN6vwHurVqWv6Gwj1Fh7nEFRKHPFC5vfqBpMVLLelaZFL9X5LZ3p1JXpgah498hV6C2pvqjL52BVJeIrjSHwfSdyG3egwbkHKeQh/1lWTBphQQKvXagt4PVNqMDCqsJ/oqNuMBC/74Q4rEYv3TAxe7hQrZkPkbjjzgi+AnPN85QXwOPWwgI9XuQpKI2SewvGNXqfJuMzgViesm8BxLpsWcPY2R+wt8XnFeJ28TmrL83zYkOCntQO21h21DRCfkbvlp/pR8pPkPHhA/S32MT9F1/MrZtUJ8W1IkP/iugSa+48+NJ9L+N4IAsih/JHqyvRUwRC+6B0Ps/QMhAiL+llrRyDmhqjS8X8GplW5poC08oZuwXHUtoue08j9894vC3Dr3B6l+GlQi3dM9bvAowZGeCRN4/iUYhDk52H5v5D+G5JTsZx/ftAef5vvoeXvwG8MkP9IAoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fb3fa6e9657303107f4465ea6b8368c7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>bd976810-cd91-455d-969b-5719aaf8ff0b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 07:12:48</sys_created_on>
+        <sys_id>c2fed72965f703107f4465ea6b8368ac</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:56:57</sys_updated_on>
+        <ui_id>4f9cae59-a935-4530-ad7d-9ce64ed75d9e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Ty27bMBD8FUFn25D8tm9tDAMF0qRIg1zSlFiRq5goRakklcQ1/O9dSbStPBokQA4JUF8M7u5QM8Ody00oRTgPhyiieBaP+SAeDPpR1J8O42Q8SOK+GABiHHZCDRnSpEGeG0HnG1BlVdhspuPpGIfxoBuPZpPucBzH3RlOpt0hXTaa9DlM0lHvrMZtt4QU0hYK1hf+AqrwlVTCoA7nl1edsABD33JowvnmQeulZBUkqGj0bMf2IXu3LqqzyHmZoXZM7orHHrnwneDLgjoEqujEUSfEO4daIBFJQVnshBloAS4363DuTEkFgyBOtVrvJ1ZSu0ZoBndW/qEvD6NqLkVSxr0J+yPzBjXldAEOvtPN3JVm71cuOdrGE4EplModtWvNwGnhZK4biINE7dC5KjN90jgS7i9ovUdpiQQWlc6KeSMr/b7Kb892JJdS15Z4iSrnoPYncM7IpHQVnU2ICmuPMygKqa9ZYfIbWYOJSta7VnTopSq/pW9aea17wCvePXIVekuqL+ryBRhZifhK1xB42wnt2h4psPYghTxkv8uKSSPMS2C1C7UFrN6ECsyNLNwn+tQNeuLbjo9D1H92w/CwUHUKbCsO9C+JOPFn1oEr7Y8yigYiBalQ/Gx1BTqq+fZn0L8C4DwvaeMOQ0EDCxLkQG8SuBXup6QNMmktGRrkJtC5C6DW0nucsHfB6XUZf8EL7DK+lKiEfeJJfMYdZmSGQ9Y80f2Yn/tmcOGb+6S/WdTjcVT//gf+/QY+GT23bnx22K7WnYfQ3zGrOUsoMCxPWQEsah0M0PMia2LDnAFtG72Pg1pHLk+Dbx4UdINlk7bze7DXZekF4nZZOq+X5mmxuzg9rB23scFJ0/AxGr1ZiqYfKT9exocP0L9ic/UXO0b2VTgKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c2fed72965f703107f4465ea6b8368ac"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>0361813f-d145-4f40-8e94-1812074ebe75</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-13 07:02:52</sys_created_on>
+        <sys_id>99ac4557e57703107f44a85fbcd507fa</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:56:57</sys_updated_on>
+        <ui_id>3c574cf5-8efc-40c8-b31f-0b527a1eadb7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K1ae2yrpd/u2UVWaxGACxAtjlmPfUAvHzmwH6Kr+990kbskAsSKhSWh9aHXv9bHPOfFprjaRFNE8GoKIk1ky5oNkMOjHcX86TNLxIE36YsAAkqgTaZYDrrTAjRVY3zFVVo3NZjqejmGYDLrJaDbpDsdJ0p3BZNod4majSZ+zSTbqndW47RaRQrpCsfVl2AA7fCWVsKCj+dV1JyqYxbM82Gi+eTI6lKxiKShcerZj+5S9XxdVLQwvc9Ceyl3zOCAXYUK+LHCCoIpOEnciePCgBSCRjCkHnShnWjBv7Dqae1tiwwITp1qt9ytWUvtGaM4enPyFJw/jal0GqIwHE/YlDQY17WzBPDvHnbkv7d4vIzm4xhMBGSuVP2r3mgWnhZdGNxDPUrVDG1Xm+qRxJNpv0HoepUMSUFQ6K+aNrOx8Ze7PdiSXUteWBInKcKb2FfPeyrT0FZ1NBApqj3NWFFLf0MKaO1mDkUreu1FY9DJl7vFMJ290j/GKdw9dZb0l9hd1+5JZWYn4itsgeNuJ3NodKebcoxT0kP4sKyaNsCCB1i7UFtD6JlRgbmXhP+FRdxCIbzshDunotRvGZ48XqrXnYyQeqNOcpkzfUpPRgtG4VViGjxdoxqQCQb1l2jV6nyfjM4KIyci3ACJdsqxh5OIP2Nvic4C4XXwu6kvzstiQoGe94zaWnDSDkJ/Ru+Vn+pHyE2R8+AD9LTZx/9U/5tZNqpPiWpHBX4l0kTV1nvnSfS/jeCCalPxoTQV47IXxxQqIkvoWE9EKEuGmVIJo40kKJDOlFvhtiV9JRzhz0HsetX9+/tsye4Czu8wuJSjhXrB6F1jIUbgH2lj/JLRhSC7DcP/ie7fkJuO4/nyg/P4377/r31Q/TL0QCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=99ac4557e57703107f44a85fbcd507fa"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c41c1d45307f03107f44f54bcdda0213"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c41c1d45307f03107f44f54bcdda0213^sys_idNOT IN028616d505f703107f4442f8daf9321b,542e2a69657303107f4465ea6b83682f,87daf2a165f303107f4465ea6b8368d4,eb10725905bb03107f4442f8daf932e5,e40c8dd3e57703107f44a85fbcd507b5"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">32186e59057b03107f4442f8daf9320f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 07:17:51</sys_created_on>
+        <sys_id>028616d505f703107f4442f8daf9321b</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:17</sys_updated_on>
+        <ui_id>2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8HPxthOHda8lWyBwtqMJRTGKOZauk7EZMmT5KRZyH/flT/SsKa0jD3uzTq6955zrg4+BLpxdePsSt9YK9YqmH5/DAOhPEbfh0BBhcE0YFpx4YRWeQuEwRZk4y/mICTy0cqAssB8xWgG1ldwYWsJ+4c3C9lGSG6w567BEINDE0wPf1y5fY25hAIlzVs6I9Sa2gWnUxlDmVyzhI3TyTiN4/TDVVJMxkWS8jEgjKluaJwNVkafWyR81aPnI9wOTNpwLyuJwwCfHCqORF2CtBgGFSgOTpv9CTEIfKHkM7ARytG4wBc/WfGLZqdZ5gtLJI8Mu8vTMe832MFsowXDRe0FdoiDQvY9TMumUvedD797LKGRbtg9IY2leVh70V5FL6lcbvTu60A4F6o12F9KzUCeTuBoDUXj0PqHQYkVDcorqGtaTl4bvRVtM2mporWkQ1RKvSNSn6uoe/KIdgTRnPCPLfwARngXdzSGmjuZBVjB8jaDNM4ZsnBs15L/bLygzmBvJe+2QQWWGVG7G+LZYq/6GL4M8Fl2D4cZPZJDnicRawztwEWqqQo0x+Pt8n6x+nT3ZfXtZZTf3fcvkn0NWZklcXY52VeTS8m+kOnX45y+EWf/AO9McxzH/+N8Hmdh8y6WvbeW/K/T/Oij2zHYLjccmbAkZOWx2+Gv7S/2FADBzqGdNj+8hWfs+BuvIRS4/wUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c2fed72965f703107f4465ea6b8368a6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>b7df2a53-de34-4768-bff4-86560399a81c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 03:39:25</sys_created_on>
+        <sys_id>542e2a69657303107f4465ea6b83682f</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:18</sys_updated_on>
+        <ui_id>708a1dca-4161-4dbb-88f0-b75ffec2a13b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V247aMBD9FZTnEOUCbOBt1RZppe5SLQhpVa2iwXbAqmOntgNLEf/ecS6Auqx60T72LT7jmTlnfEY5eKqyZWXNQt0aw9fSm3x99j0uHYbfB09CwbyJR5Sk3HIlsxrwvS2IygUWGqQB4kK9JQhOof7s9x4ZUZr2pqqSFO9TbkoB++VfppENF1SzllcJGrtbpr3J4ZeQ3ZcsE7BiAqvPreZyjemc4ikPIY/GJCJJPEriMIzTQbQaJasopgkwSPBel/ihk9n7XCP+m/pdP8RN1wlJO1pR6HvsxTJJGbbOQRjmewVI1Kf0/oRoBnQmxRnYcGmxnOcuvxj+A2vHw6G7mDPUSFgTPB2zdp4NTDaKEzYrHcEGsbASbQ5RoirkQ6PDvQTLoRK2ewlEKoP1WOlIOxYtpXy+UbvHruGUy1pgGxSKgDidwOIYVpVlxj0ME6zAQlkBZYnDyUqttrxORi5FsMbXZkEu1A6bOs8FjQ8CnBEEU8Q/1vASNHcq7rEMJjc0V2A4yWp/YjmrUcKxHkv2vXKEGoGtlKyZBl4wRPPS3mKfLWtZH/3X5r7w9eFwA2RwE6dJn6SU9AcxhP00ZNCnNE1pQoZROE6Dxq6BPds54/R4vJs/zBaf7r8snl5b/x0rv8d2jGGYY8fh9e0YjK5tx5W9eHsl4t+shHvEP9yIMAz/r8TlSnCTNdZutdXN/3kjnp39mw6m8Q1lhBsksnDYXfdXcIE9GoCTS2in9Dcn4YwdfwJf5mVPXwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">42fed72965f703107f4465ea6b8368ab</block>
+        <comment/>
+        <connected_to>b7df2a53-de34-4768-bff4-86560399a81c</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 04:35:02</sys_created_on>
+        <sys_id>87daf2a165f303107f4465ea6b8368d4</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:18</sys_updated_on>
+        <ui_id>bd976810-cd91-455d-969b-5719aaf8ff0b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2f10725905bb03107f4442f8daf932e4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 09:09:38</sys_created_on>
+        <sys_id>eb10725905bb03107f4442f8daf932e5</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:18</sys_updated_on>
+        <ui_id>b7df2a53-de34-4768-bff4-86560399a81c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/TMBT9K5Wf28hJmtL2rQJNQgImbdNeYIpubKe1cOxgO+1K1f/OdT66ausAIXjjLT6+H+fce5IciGl83Xh3Z1bOybUmy88PYyJ1wPD5QDRUgiwJM5pLL40mY7IF1QTscKB0QRdvpskECsgm0xlPJvN5QSc8mYqE0iTj81l0I5ixPALGTKN97jz4xh2PXxpKUw7My63Aoly6WsH+/l/UZhupuBW9uBosavLCkuXh2ZXf1yJXUAiFFG69lXqN6ZLjaQFZmcU0Y2kyS0P/+TQuZmkRJzwFMZ1h3JD49mxWF8YXmiDkhvIoIHBJ6JiIRy80F9ivBOXEmFSgOXhj92TpbYOAFcCvtdqfIjZSe6xGQuyjk99FqERpiCwFCmOiuz0d837SHcw2RjJxXbfcWsRDofocZlRT6U+dhLAjUUKj/LAjRBqH9UQdSAcaPafydmN2N0PDK6lbgf2lMgzU6QQex1A0XriwDaFEhYXyCuoah5PX1mxlm4xcqmit8BCVyuywaXBrFFZsdIQzgugK8XctfA9WBhUfsQwm4wZd7piV9aCtbU6O7VTyb03g0+nrleTdMDCgS1t1TupIH8cv34q8BZ5ejVVnyBGOSiI5jBhNRqtXvP7z4L9h3pJCGS9YfNm8kF4y7+hDi7y08KD1FR/Hv/Bxj/yWkbPsv4/PfRxoFuAky9svNJYLX4U/NvJDMGzXwnUe4oJJh0zuAvZ++AuEiz1uXbJzaGfs16DhCTv+AFGLFbNPBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">18d329d3e53b03107f44a85fbcd50735</block>
+        <comment/>
+        <connected_to>708a1dca-4161-4dbb-88f0-b75ffec2a13b</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>b7df2a53-de34-4768-bff4-86560399a81c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-13 07:00:05</sys_created_on>
+        <sys_id>e40c8dd3e57703107f44a85fbcd507b5</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:18</sys_updated_on>
+        <ui_id>0361813f-d145-4f40-8e94-1812074ebe75</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c41c1d45307f03107f44f54bcdda0213"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c41c1d45307f03107f44f54bcdda0213"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c41c1d45307f03107f44f54bcdda0213</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 08:25:52</sys_created_on>
+        <sys_id>3c8c5985307f03107f44f54bcdda02b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 08:25:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c41c1d45307f03107f44f54bcdda0213</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 08:25:52</sys_created_on>
+        <sys_id>f08c5985307f03107f44f54bcdda029d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 08:25:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c41c1d45307f03107f44f54bcdda0213"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c41c1d45307f03107f44f54bcdda0213"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automates banking case intake, validation, intelligent routing, operational task handling, and escalation for Bank of Paradise customer cases.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>bop__case_intake_orchestrator</internal_name>
+        <label_cache>[{"name":"Created_1.current.number","label":"Trigger - Record Created➛Bank of Paradise - Failed Transaction Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction","column_name":"number","usedInstances":{"2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53":["condition"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Bank of Paradise - Failed Transaction Record","reference":"x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction","reference_display":"Bank of Paradise - Failed Transaction","type":"reference","base_type":"reference","usedInstances":{},"attributes":{}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Case Table","reference":"sn_customerservice_case","reference_display":"Case","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"8686e413-1597-4611-9e78-4313572ca7f5.Record.bank_account.sys_id","label":"2 - Look Up Record➛Bank of Paradise - Failed Transaction Record➛Bank Account➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","column_name":"sys_id","usedInstances":{"00909742-aba5-46d2-88b0-d24e20025d86":[null]}},{"name":"8686e413-1597-4611-9e78-4313572ca7f5.Record.transaction.sys_id","label":"2 - Look Up Record➛Bank of Paradise - Failed Transaction Record➛Transaction➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction","column_name":"sys_id","usedInstances":{"7ac47283-c8dc-42a0-80ea-dd88d3c51098":[null]}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Bank of Paradise - Failed Transaction Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction","column_name":"sys_id","usedInstances":{"8686e413-1597-4611-9e78-4313572ca7f5":[null]}},{"name":"00909742-aba5-46d2-88b0-d24e20025d86.Record.account_status","label":"3➛Bank of Paradise - Bank Account Record➛Account Status","reference":"","reference_display":"Account Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","column_name":"account_status","choices":[{"label":"-- None --","sequence":-1.0,"used":false,"reference":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"sequence":100.0,"used":false,"label":"Active","reference":false,"image":"","rawLabel":"Active","selected":false,"missing":false,"value":"active","parameters":{"name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","dependent_values":[""],"dependent_values_map":{"":"Active"}}},{"sequence":200.0,"used":false,"label":"Blocked","reference":false,"image":"","rawLabel":"Blocked","selected":false,"missing":false,"value":"blocked","parameters":{"name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","dependent_values":[""],"dependent_values_map":{"":"Blocked"}}},{"sequence":300.0,"used":false,"label":"Dormant","reference":false,"image":"","rawLabel":"Dormant","selected":false,"missing":false,"value":"dormant","parameters":{"name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","dependent_values":[""],"dependent_values_map":{"":"Dormant"}}},{"sequence":400.0,"used":false,"label":"Closed","reference":false,"image":"","rawLabel":"Closed","selected":false,"missing":false,"value":"closed","parameters":{"name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_account","dependent_values":[""],"dependent_values_map":{"":"Closed"}}}],"usedInstances":{"b7df2a53-de34-4768-bff4-86560399a81c":["condition"]}},{"name":"7ac47283-c8dc-42a0-80ea-dd88d3c51098.Record.transaction_id","label":"5➛Bank of Paradise - Bank Transaction Record➛Transaction ID","reference":"","reference_display":"Transaction ID","type":"string","base_type":"string","parent_table_name":"x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction","column_name":"transaction_id","usedInstances":{"708a1dca-4161-4dbb-88f0-b75ffec2a13b":["condition"]}},{"name":"8686e413-1597-4611-9e78-4313572ca7f5.Record","label":"2 - Look Up Record➛Bank of Paradise - Failed Transaction Record","reference":"x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction","reference_display":"Bank of Paradise - Failed Transaction","type":"reference","base_type":"reference","usedInstances":{"f91d59f4-2934-477e-8760-fefe51016517":["record"],"07398b70-2379-4b45-ad74-42d96c6cecf2":["record"],"4f9cae59-a935-4530-ad7d-9ce64ed75d9e":["record"],"3c574cf5-8efc-40c8-b31f-0b527a1eadb7":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>BOP - Case Intake Orchestrator</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="BOP - Case Intake Orchestrator">c41c1d45307f03107f44f54bcdda0213</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6610147740f703107f44ffe0597fe261</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6610147740f703107f44ffe0597fe261"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6610147740f703107f44ffe0597fe261"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6610147740f703107f44ffe0597fe261"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6610147740f703107f44ffe0597fe261^sys_idNOT INaa10147740f703107f44ffe0597fe262"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6610147740f703107f44ffe0597fe261</id>
+        <name>BOP - Case Intake Orchestrator</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>aa10147740f703107f44ffe0597fe262</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=aa10147740f703107f44ffe0597fe262"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6610147740f703107f44ffe0597fe261^sys_idNOT INaa10147740f703107f44ffe0597fe264,ae10147740f703107f44ffe0597fe278"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</model>
+        <model_id>6610147740f703107f44ffe0597fe261</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6610147740f703107f44ffe0597fe261</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>aa10147740f703107f44ffe0597fe264</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aa10147740f703107f44ffe0597fe264"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</model>
+        <model_id>6610147740f703107f44ffe0597fe261</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6610147740f703107f44ffe0597fe261</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>ae10147740f703107f44ffe0597fe278</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ae10147740f703107f44ffe0597fe278"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6610147740f703107f44ffe0597fe261"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6610147740f703107f44ffe0597fe261"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6610147740f703107f44ffe0597fe261^sys_idNOT INbe10147740f703107f44ffe0597fe2a1"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>be10147740f703107f44ffe0597fe2a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY2W7jNhT9FUJPLeAAWuw4zttMFjTAdNLanvYhSAVKJG1haNIjUUrcQf69l1psWYuX2J56ngxxPffw3HNJP303OPYoN66NMfY4NTpGIBQNBebjxZxCs9LNrsAz3TfDgmAlw4VxrcKYdgwWytmYzuYcKxjMMI+gUYaEhsa11TESzGM6WkQPBFaC+eky+ZpG3g3fr24kfNfD4qsrmTvHrln6CDEJIuoyHHBKXBViEWFfBVLAAtADWy/+ytf5CJOQZOiPfBK6QPfpNDRem+ZPA05CKozrp+eOobeYUaUhf690BRq3z3w8sKnpO5Zj26ZpX3Ut79LxLJs4mJomLFjlsBKnaqByRRJ9VVQQSpb81VgOKSaPgi+WI6ZwSBmjM/waBf/C6lemHscoYPdp1rf8dHOesmZ/KgOfPs5TMtKWDGfWKXk8E58z/JphynDMVcEwtMRwGITONWQNIkfERlP5Miw2vA9EGl3eyaWP+fILKxUGXqxopAlnAQfq3YybSMZhin54d/M4vHX//jC++e1u6A7vRuPhw8347tZ4S+Nyv8V6xQxhjsXNwnlbyuI+oFwfoIhnHqDpGJEfBnP1AWSQFGp966wy4EYKEuQSqWSBX3RF61lQRL8pDUyzNRH80o5FMvxz92dd2Vnjfrq9vMSYUNyiW4+VdFuOvAGaaiChHN0mBectu0i4a5r/k4hzM3uvhl+wUJGrpIsJcUssQcrDwjpESSi/Xe0H7cFkArIPxDxW0VZRZ7G9bVVwGAuY4C7Po67jlLYlf5+CCNA8QRaO6Lc4I/0CLIkVVOX42ad8g2EskBTIj0PgSCE4ZlRshlKQWhrsYYYnOdGwMKe+KmmDfYnKX78HURSISSmYNizpgDoYvigjKiz3EAzPx0zx+pEk69xWMn3vNLcsxjzKbLOvk9wyHY9ZZt/sYUYc0/TtUprXsbSCVBW9nCTd90v2KFUq3+Hwk4picvBmOVV2UnLlqAoStEJyT7k5DjTrSNBsDa3ijc5e5lgAy5tv19W5KbQjXwwwSTDMIEWM7yj820u+Fj7j8gWM+HCzZDKkk1DGglRdSm+BAvhdG3Eam/Sw/3UzitUI9Et+zL+em2WuDqUQOhaLI7ilwyxvQLvUBJN0wB+93mDg+dhmrH/Zp7ZVccsVjEZsP4VLbjn2pEk3bY7ZKOSkSf97eOUBAGu+uTfAwx0zF2ajX2Z9Z+CMO/jgy5QKF6CGLtdOV7PDCQ8ILfqOm+21rZNVfh+a8exq4Pesft/vwxMIMp51qYetrt3Dg/6lc9WrZHwNyiaYqoGZH/IwihZRCqTFDb5kXef10j+lbCOqlC5HB9fwdDrO9iuVT31CKPUXGSLNLnpYDUQjCsUwfSmfqqZLNa1Vc0DyEdrXkOi74mcpLhrQnfBlJuDtsAtxLcjO7e5RUVSyfggHv9do96o3YE6zH7FBkx+twLTDPPu7yI5SSFpF1XQp2TUxk8b8br1FvCO3KjIpXy823H+ORYp1dFLs05HiHHznKnKx9ZH6HrA/Ub1LLyFHK3pSUFeyRtsOGMr/q6QEeQukphS45XDLhp2RhnHCupLdnmtVD5pRfvk5WUHTZ1Il5VYi6EDhD6HlNFWtopvjvq0p6eNez2m5aQ+qb+smQFvwnn2N21siSZPiNha6/datrtlY6koJta6IHYvYUaNurmSHRd1Yy7ZFfXiV2vTPQAOKM60/z/8BiGSBBSUgAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6610147740f703107f44ffe0597fe261^sys_idNOT INfe10147740f703107f44ffe0597fe29c,be10147740f703107f44ffe0597fe29d,7610147740f703107f44ffe0597fe29e,3610147740f703107f44ffe0597fe29f,fa10147740f703107f44ffe0597fe29f,b210147740f703107f44ffe0597fe2a0,7a10147740f703107f44ffe0597fe2a0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>fe10147740f703107f44ffe0597fe29c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>8686e413-1597-4611-9e78-4313572ca7f5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXW2/iOBT+K1GegU0IEOjbDhXSSLPT1bTbl9mR5cROscbYGdtpSxH/fY9zg4EUyBRWXe1T5ONjn9v3neN8XbmMuFfukHiTZDIZjkPPCwLPG42CGPtRFIziyIsi3+24Ai8oaGqpDDLLlILoEfOslmEdg4gwnXK8vC93sGOk8wLyeM44UVS4V1+/ddwUK7jNUOVerXa2TnWH44hyUL0F285d4U+Di/nnCmxIFlfrT+XRaSWUilhXgo5Lnw0VhIIPCeaadtwFFgQbqZa1RFFMbgTfCOZMGLjNtcrPmr2AvaBv9RIKUcW02KuXqExRIU6uscG3RmWxyVSpWjirIR+rOsw6kQ05L9331p2N/ovVx7v6hG4f8NeQb0ITnHEz/TWbflubfWuzCPAmNUxC1d3A1gVHvApf8mwhPhe1dGsP7xvAVuxcv4K5TEOyaWoLaitUliu5ncunL1U1ZkzkfpWbXMaY1ytsjGJRZmxeVm5CUMIoJ4gJzoS1BGWz8KGcLsACWuA0ZeIBpUo+svxWiGXRe+Cw6CVcPtlcsAfRw7GNvAfAwr0ZyK9z8T1WzGbhD7gGDneswTkcLe0hHSuWGvTEyAM1G+uVFpHmCfPvTfsl4lBVqDw8d91x9VJPOdZ6k2yAKfqR2RwUqS+zh/JC5UdyL36HCB5pmSiLgZy2/kHaYrJD0aLQW3jZ7x+tO8cJLlRZuLGIdKLla16VraOoea7xc/uY2Q3nc7FRwftsLWTsnaeFNFF8n4KtGLhPLQu1NzDrggRqYmx74Be5OYb+ycGhNdngjCVoAflkKadI0RiwoxFWFCUyEwQVwW3RwiY7YUqbUnmfJl8olF44EjDlmDl1cm2n1m5JoeNxVBT6mDhVIKU17UAgTh6IUwfSLuw2I3twNr4NzsS3zTicYcbzamhD061yUqWkemVsHynkAUScONNPdMo/q1NvH/pNFGgc/kd8PfOT4DKN6/yDOaY4GvTxKAx83/N8j4TeOAz98ShKRjgcJBuOIqRFDG8JuDkBqMD1qIJGVWdvv/8UD4q2jeYEryoIXkvxd+Z5/dA41i2or1O5ddzxsqFEUnKKxU5HuYOJ8Nus9L/E6/DddZV/ZYq/lQ0Zu9vNdCFqzPWlhn7G/hLsR0Y/WoiNqdcf+yTujkM/7A4SMupOCB528SQahgGh8SC5xEOYDA++QreeArEUhNm49PZ/01IjRizgA7JaTQFohhLk9+JMQU1Mr9hfr/eJ2OJkO66eEFHF1el2SE1hVgN+V/ap6YJqIJ2Rkt5/iZTv8ml9oRc0OfjyxIMNnorrNox5zrt/hMV3JBOUYuRtLRSGotJ8LAAZjMJC14/NHf58gEOOTJw/y0NO15nlx5y7n461JM/xuCry3JWB7cRZUiZfNv2L5sd2/kW9/+e/6Pt804FDjANCUFFCLTOVp/IRxTzT+cYWwM43kb79A1tKRbriFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fe10147740f703107f44ffe0597fe29c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>be10147740f703107f44ffe0597fe29d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>00909742-aba5-46d2-88b0-d24e20025d86</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX227jNhD9FUHPtitZtmXnbZsgwALbTZGkedkuCEqkEmJpUktSSRzD/94hJVmurfjSKEWKPgkcDjm3c2aob0ufEf/MH5Ngls1m42kcBFEUBJNJlOIwSaJJmgRJEvo9X+A5BU0tlUFmkVMQPWJerGVYpyAiTOccL+6qHewZ6b2APH1gnCgq/LNv33t+jhXcZqjyz5ZbW8e6w3FCOajegG3vtvSnxUX3OQMbkqX1+kt19LwWSkWsK1HPp8+GCkLBhwxzTXv+HAuCjVSLtURRTK4EbwQPTBi4zbfKz5q9gL1oaPUyClGltNxbL1GVolKcXWCDb4wqUlOoSrV0VkM+lusw14lsyXnlfrDqNfovVh9v6xO6eSBcQb4JzXDBzfk/sxmeanNobZYBXuWGSai6H9m64ITX4UtezMXXspb+2sO7FrCVOxevYK7QkGya24LaClXlym4e5NN1XY1LJpxf1SaXKebrFTZGsaQwNi9LPyMoY5QTxARnwlqCsln4UE7nYAHNcZ4zcY9yJR+ZuxVimQ/uOSwGGZdPNhfsXgxwaiMfALDw4BLkF058hxWzWfgNroHDPWvwAY5W9pBOFcsNemLknprGeq1FpHnC/EfbfoU4VBfKheever5e6HOOtW6SDTBFPwubgzL1VfaQK5Q74rz4BBE80ipRFgOOtuFe2mKyRdGy0Bt42e0fJ3eOI1yos3BlEekli9e8qlpHWXOn8ff2cWk3vK/lRg3vzlrINOimhbRRfJeCJzFwl1oWam9g1jsSqI2xpwO/zM0h9M/2Dq1ZgzOWoTnkk+WcIkVTwI5GWFGUyUIQVAa3QQub7IwpbSrlXZpcUyi98CRgyjMP1HPa3lr7RAodjqOm0OfMqwOprGkPAvFcIN46kNPCPmVkjzrj26gjvjXj8BIz7qqhDc03ykmVkuqVsX2gkHsQceRMP9KpsFOn3j702yjQOvwP+Nrxk+B9Glf3gzmlOBkN8SSOwjAIwoDEwTSOw+kkySY4HmUNRxHSIoW3BNycAVTgelRDo65zsNt/ygfFqY3mCK9qCF5I8WcRBMPYeNYtqK9Xu3XY8aqhJFJyisVWR7mFifDLZeV/hdfxh+sq/8oUfysbCna7nelS1Jrr9xr6BftDsJ8F/WwhNqXBcBqStD+Nw7g/ysikPyN43MezZBxHhKaj7D0ewmS89xW68RRIpSDMxqU3/5sWGjFiAR+R5XI6mU7oKIz64XgGMUzCsD+j8bQ/isJoHA9THGfjwbXrcIMEix8wSVOYqGZQXrNa7fK1ewOnMf+I/NTMP99MUFvS6ufCtuxL2wX1eOuQ4MF/ieIf8qHe7Xu8FjroNbWHVRtjVw1n9z578aiBX2m9oeuzGz2OGTJDOUbBxkJhwABFm7zZ5eOvsOvJzPu9Uvf6nhN9Wh84kV+HY6n5dVsFsxVbxSq3bPv5dce2fn6D/+fP78d8RIJDjANCUFlCLQvlUvmIUl5ot6Gw0NVfV3cj8PtfOs+/CFMWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=be10147740f703107f44ffe0597fe29d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>b7df2a53-de34-4768-bff4-86560399a81c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>7610147740f703107f44ffe0597fe29e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>7ac47283-c8dc-42a0-80ea-dd88d3c51098</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXUW/iOBD+K1GegUsIEOjbXatKK+1tT22vL3sry4ntYq2xs7bTlqL+9xsnDrCQFrjCqad7QhmP7Zlvvm/GfF2EnIRn4ZBEEzaZDMdpFCVJFI1GSY7jLEtGeRZlWRx2QolnFDyN0hbZeUHB9IBFubRhk4OJcFMIPL/zKziwKngGez7lgmgqw7Ov3zphgTWcZqkOzxYbS/uGI3BGBbjewN3BbR1PS4jVzxncoXjefH/2W88bo9LEhZJ0QvpkqSQUYmBYGNoJZ1gSbJWeLy2aYnIlxcow5dLCaaFzfjL8Ge5L+s6PUcgqp/Xa8hN5iGozu8AW31hd5rbU3rUO1gAei2WaSyBbMPfhRy+dlf+z88eb/oSub4hfAG9CGS6FPf9nd8aH3tl3d9YJXhWWK6h6mLi64Ew06StRzuSXupbhMsK7FrLVKxevcK40ADYtXEFdhXy52M1UPV431bjksorLLwqVY7H8wtZqnpXW4bIIGUGMU0EQl4JLdxOUzdGHCjqDG9AMFwWX96jQ6oFXp0Ius969gI8eE+rRYcHvZQ/nLvMeEAv3LsF+UZnvsOYOhd/hGNjccRdOYau/D5lc88KiR07uqV3d3ngRZR+x+N627hmHmkJV6YUvndDMzbnAxqzABpqiH6XDoIbeo4eqQlVbqih+hQweqAfKcaCSbfymbDHZkGhd6DW+bPePgzvHHiE0KFw5RgbZ/LWofOuoa155/Nw+Lt1C8KVeaOh9tBYyjo7TQtokvi3BgxS4LS1HtXco64QCalPs4cSvsdnF/smbQ2uy4hlnaAZ48kJQpGkO3DEIa4qYKiVBdXJrsnBgM66N9c7bMrmmUHoZKOBUYKc0qLyDpfeBEtqdRyOhTyxoEvG3mQASCapEgmUih6V9yMgeHE1vgyPpbTUOLzEXVTWMpcVaOanWSr8ytncU8g1G7DnT9wwqPmpQ7x/6bRJoHf47Yj3yk+A0jev4gzmnOBv08ShN4jiK4oik0ThN4/EoYyOcDthKowgZmcNbAk5mQBU4HjXUaOocbfef+kFxaKPZI6qGghdK/lVGUT+1gQsL6hs0Ye0O3DeUTClBsdzoKLcwEX659PF7vg4/XFf5V6b4e9VQ8ttNpGtTK9anGvol/1PyHyX95Cg2plF/HJO8O07jtDtgZNSdEDzs4kk2TBNC8wE7xUOYDN98ha49BXIlCXd5mfX/TXODOHGET8hiMR6NR3QQJ914OIEcRnHcndB03B0kcTJM+zlO2bB3XXW4ntVYGg9UfcrLy7Zcj37+YbrfA51G9+fr8LRB1jwWNm2f2w5ohtsR5R39lwT+IZ/pJ3qNkzdfsXiw4lN93Ep9T9UkybD8jhRDBUbR2ofGUFRaG9bEsK2x38AjUCz4w28JukFluv1p04HC2Z1TI5xbn9RGjl4u1Wfbf9pq28Z/2uj/+Z/2Y74NISAugCGoLqFRpa6gfEC5KE21sEaw4022b38Dwcu6+yoWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7610147740f703107f44ffe0597fe29e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>708a1dca-4161-4dbb-88f0-b75ffec2a13b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>3610147740f703107f44ffe0597fe29f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>f91d59f4-2934-477e-8760-fefe51016517</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K1ae2yrpd/u2UVWaxGACxAtj1q19Qy0cJ7MdoKv477tJ3JIBYiAhTWh9qXyvz/U5Jz7JxTZSMppHQ5RxMkvGYpAMBv047k+HyWo8WCV9OQDEJOpEBjKknRZFbiWtb0CXVWG7nY6nYxwmg24ymk26w3GSdGc4mXaHNGw06QuYpKPeSY27vyekVK7QsDkPA6gi1kpLiyaaX1x2ogIsneXRRvPto9ZryWpYoaatJzu2j9n7TVGtZS7KDI3nalc8DMhF6LAvC+oQqKKTxJ0I7zwaiUQkBe2wE2VgJPjcbqK5tyUVLII8Nnqz37FWxjdCM7hz6hedPIyrfSmSMhFM2C95MKgppwvwcEqThS/t3q9cCXSNJxJTKLU/aNeaDceFV7lpIB5WeofOdZmZo8aRaD+g9TxKRySwqHRWzBtZ6ek6vz3ZkVwqU1sSJOpcgN6vwHurVqWv6Gwj1Fh7nEFRKHPFC5vfqBpMVLLelaZFL9X5LZ3p1JXpgah498hV6C2pvqjL52BVJeIrjSHwfSdyG3egwbkHKeQh/1lWTBphQQKvXagt4PVNqMDCqsJ/oqNuMBC/74Q4rEYv3TAxe7hQrZkPkbjjzgi+AnPN85QXwOPWwgI9XuQpKI2SewvGNXqfJuMzgViesm8BxLpsWcPY2R+wt8XnFeJ28TmrL83zYkOCntQO21h21DRCfkbvlp/pR8pPkPHhA/S32MT9F1/MrZtUJ8W1IkP/iugSa+48+NJ9L+N4IAsih/JHqyvRUwRC+6B0Ps/QMhAiL+llrRyDmhqjS8X8GplW5poC08oZuwXHUtoue08j9894vC3Dr3B6l+GlQi3dM9bvAowZGeCRN4/iUYhDk52H5v5D+G5JTsZx/ftAef5vvoeXvwG8MkP9IAoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3610147740f703107f44ffe0597fe29f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>708a1dca-4161-4dbb-88f0-b75ffec2a13b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>fa10147740f703107f44ffe0597fe29f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>07398b70-2379-4b45-ad74-42d96c6cecf2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWTU/jMBD9K5HPbZU06eeeFqpKK7EUwYoLZaNJ7BRrHSdrO0C36n/fceKULCAWJC6I3jwzz3lvMm/Sqx3hlMxJxKgfzIJxGgZhOPT94TQKknGYBEMaAmMB6REJOcNKxdJCUTzfgqhsYLebjqdjFgVhPxjNJv1oHAT9GZtM+xFeNpoMU5hko8F5jdvvEUm5LgVsL90FGElvuKCKSTK/uu6REhQ+yzBF5rtHqdeSFZAwgaXnLdvH7M22tGdapFXOpIl5GzxxyIXLeN8WmEGQpRP4PcLuDZOUIZEMhGY9koOkYAq1JXOjKgwoBnQlxfZQccOlaYTmcK/5H3xy5Nu6jKGy1DXhcIxdg5pwtgADF3hzaip16FfBU6abnlCWQSXMcTfWFKxKwwvZQAwkokUXosrladMRcrig8z4qjSRYaXVa5o2s7OKmuDtvSS65rFviJIoiBXE4gTGKJ5WxdHaECVb3OIey5HITl6q45TUYqeSDjcDDIBPFHT5T840cQGp5D7CrMFhifFGHL0FxK+I7XoPgfY/orT4WoPWDFOxh/LuyTBphTkJcd6FuQVxPggWnipfmKz7qljni+56zQzJ6acLS2cNAde58sMR9rGUaJyB/xUUWlxD7nYMCfL0szoALRmOjQOpG71NnHCHIKzLvzIG8vresYd6Pf2Bvs88rxLX2+VEPzfNinYOexE66WO+0STj/jN7NP9OP5B8n48Mb6H+28YcvLubOJNVO0R3LIAlkWKvcqKIq15Xvh3S3bi2xJvM1OVqdoQXOYGvrtLdCFWCF6jXprZur6rpkMh3OZvhF8sPMDwN/kkVRNoqSlFLwh+OsLkftuPVfWb//iaSM7T0Opy5kQ8+ZseNhD0lwbDujXzyLsNniOcaDp27/jC142+Z6xXy1m2vJmaD6mYFr1xbLsaeGxc0APlpdLulduuTh8/9u+ysY+/XvA22xT/Mv4PovoSuiRBYLAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fa10147740f703107f44ffe0597fe29f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>0361813f-d145-4f40-8e94-1812074ebe75</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>b210147740f703107f44ffe0597fe2a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>3c574cf5-8efc-40c8-b31f-0b527a1eadb7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K1ae2yrpd/u2UVWaxGACxAtjlmPfUAvHzmwH6Kr+990kbskAsSKhSWh9aHXv9bHPOfFprjaRFNE8GoKIk1ky5oNkMOjHcX86TNLxIE36YsAAkqgTaZYDrrTAjRVY3zFVVo3NZjqejmGYDLrJaDbpDsdJ0p3BZNod4majSZ+zSTbqndW47RaRQrpCsfVl2AA7fCWVsKCj+dV1JyqYxbM82Gi+eTI6lKxiKShcerZj+5S9XxdVLQwvc9Ceyl3zOCAXYUK+LHCCoIpOEnciePCgBSCRjCkHnShnWjBv7Dqae1tiwwITp1qt9ytWUvtGaM4enPyFJw/jal0GqIwHE/YlDQY17WzBPDvHnbkv7d4vIzm4xhMBGSuVP2r3mgWnhZdGNxDPUrVDG1Xm+qRxJNpv0HoepUMSUFQ6K+aNrOx8Ze7PdiSXUteWBInKcKb2FfPeyrT0FZ1NBApqj3NWFFLf0MKaO1mDkUreu1FY9DJl7vFMJ290j/GKdw9dZb0l9hd1+5JZWYn4itsgeNuJ3NodKebcoxT0kP4sKyaNsCCB1i7UFtD6JlRgbmXhP+FRdxCIbzshDunotRvGZ48XqrXnYyQeqNOcpkzfUpPRgtG4VViGjxdoxqQCQb1l2jV6nyfjM4KIyci3ACJdsqxh5OIP2Nvic4C4XXwu6kvzstiQoGe94zaWnDSDkJ/Ru+Vn+pHyE2R8+AD9LTZx/9U/5tZNqpPiWpHBX4l0kTV1nvnSfS/jeCCalPxoTQV47IXxxQqIkvoWE9EKEuGmVIJo40kKJDOlFvhtiV9JRzhz0HsetX9+/tsye4Czu8wuJSjhXrB6F1jIUbgH2lj/JLRhSC7DcP/ie7fkJuO4/nyg/P4377/r31Q/TL0QCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b210147740f703107f44ffe0597fe2a0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>bd976810-cd91-455d-969b-5719aaf8ff0b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>7a10147740f703107f44ffe0597fe2a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>4f9cae59-a935-4530-ad7d-9ce64ed75d9e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Ty27bMBD8FUFn25D8tm9tDAMF0qRIg1zSlFiRq5goRakklcQ1/O9dSbStPBokQA4JUF8M7u5QM8Ody00oRTgPhyiieBaP+SAeDPpR1J8O42Q8SOK+GABiHHZCDRnSpEGeG0HnG1BlVdhspuPpGIfxoBuPZpPucBzH3RlOpt0hXTaa9DlM0lHvrMZtt4QU0hYK1hf+AqrwlVTCoA7nl1edsABD33JowvnmQeulZBUkqGj0bMf2IXu3LqqzyHmZoXZM7orHHrnwneDLgjoEqujEUSfEO4daIBFJQVnshBloAS4363DuTEkFgyBOtVrvJ1ZSu0ZoBndW/qEvD6NqLkVSxr0J+yPzBjXldAEOvtPN3JVm71cuOdrGE4EplModtWvNwGnhZK4biINE7dC5KjN90jgS7i9ovUdpiQQWlc6KeSMr/b7Kb892JJdS15Z4iSrnoPYncM7IpHQVnU2ICmuPMygKqa9ZYfIbWYOJSta7VnTopSq/pW9aea17wCvePXIVekuqL+ryBRhZifhK1xB42wnt2h4psPYghTxkv8uKSSPMS2C1C7UFrN6ECsyNLNwn+tQNeuLbjo9D1H92w/CwUHUKbCsO9C+JOPFn1oEr7Y8yigYiBalQ/Gx1BTqq+fZn0L8C4DwvaeMOQ0EDCxLkQG8SuBXup6QNMmktGRrkJtC5C6DW0nucsHfB6XUZf8EL7DK+lKiEfeJJfMYdZmSGQ9Y80f2Yn/tmcOGb+6S/WdTjcVT//gf+/QY+GT23bnx22K7WnYfQ3zGrOUsoMCxPWQEsah0M0PMia2LDnAFtG72Pg1pHLk+Dbx4UdINlk7bze7DXZekF4nZZOq+X5mmxuzg9rB23scFJ0/AxGr1ZiqYfKT9exocP0L9ic/UXO0b2VTgKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7a10147740f703107f44ffe0597fe2a0"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6610147740f703107f44ffe0597fe261"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6610147740f703107f44ffe0597fe261^sys_idNOT IN3a10147740f703107f44ffe0597fe28a,f210147740f703107f44ffe0597fe28c,3610147740f703107f44ffe0597fe28d,7610147740f703107f44ffe0597fe28e,7e10147740f703107f44ffe0597fe29b"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">32186e59057b03107f4442f8daf9320f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>3a10147740f703107f44ffe0597fe28a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VW2vbMBj9K0XPxthOE9a8lXSBQtuMJRTGKOazJCdisuTpkjQL+e/75EsS2oy2bI97i46+yznHOmRHtHe1d3ahr60VS0XG358iIlTA8PeOKKg4GROqFRNOaJU3QETWIH24mIKQnF0sDCgLNFRcTMCGCiZsLWH7+GYhXQnJDO9212Bwg+OGjHcvrgTDOWUCZXpFUzrIRoMsSbJPl2kxGhRpxgbAYYADJRRcYumkJ31x1yDRH9W4bR1w64xQy+58102Z96A2LLBKk4jwZ8cV48inBGl5RCpQDJw22wNiOLCZkkdgJZTDcSQUP1vxCxdmw2EoLDlKpLy9PBzzzsAWLm/AAVLx1HnTldKVFpTb1hzGS/DSTU6xtmBWB6lti4NC9t1a+ko9tI6Qw4D+eyHiLZLgdVAaqHc6yvlKb772LKdCNa50l1JTkIcTOPSu8C7w2REueYWD8grqGh3Na6PXomlGLlW8lHiIS6k3uDS8xbh9JjEaC/EU8ZsGfgQjgop7HIPNLc0CrKB5825xHNrEyT4idmsnEqw9ikR3858+UGwld+Ly1p/QQo2o3TVuXvNOxz56HYOTBOx2E/zWjrM8jak36IqLla8Kbvb72/nDbPH5/svi2+tAvLvvY/m4gmE5TJPh+Xxcjs7l40wyPhiK7I1QhC/yzkwkSfI/FH8dCmHz9il32prl/zATTyEA7c6D11RYpLYI2G3/DxIutvi4BD2FNtr8CKKO2P43EZx1B4sGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2f10725905bb03107f4442f8daf932e4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>f210147740f703107f44ffe0597fe28c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>b7df2a53-de34-4768-bff4-86560399a81c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V224aMRD9FeRnWJmFpcAbIopUqW2kJMpLG61mbS9YNfbWFxKK+PeO9wKooZeo7Vvf8PHM+JzDHNgTE3wVvLs3C+fkSpP5x8c+kTpi+HlPNGwEmRNmNJdeGk36ZAsqRGy/p3RGZ2/G6QAKyAbjCU8H02lBBzwdi5TSNOPTSXIrmLE8AcZM0D53Hnxwh8OnQOmIA/NyK3Aol65SsHv4F7PZWipuRSuuAouavLBkvv/uSnJ8egZZmQ1pxkbpZBRfmo6HxWRUDFM+AjGe4EAFhVBYujxz5YJRfldFyHkr9ao9v2tb7zoQ+UcqKe0T8eyF5gJJlKCc6JMNaA7e2B2ZexsQsAL4jVa7Y8Vaao/TSKx9dvKriJMojZWlQF1MNLfHY94a3cDlFXhAKoH5YNtStjaSCdc4wkUJQfnlOdYU3FS1yrrFQ6G6bqPCRn9ozCDHAd33ikhwSEJUUWnk3gop79bm6bZjeS117Up7qQwDdTyBR++K4COfPRFKbHBQvoGqQkfzypqtrJuRyyZZKTwkpTJP+Gjc8CSuhdEJGgvJNeJXNfwAVkYV73EMNuMuuNwxK6tOW/04OfSJ27mlAudOGtHc/EuIDBvFrba8sSe21IMWzT42Mg79l9nKa+AUsEWz1j00TyJdrOgNeosfJObnxa+LQEmhHM7Y8HIEYHQpAr1ms18GoVP1mjQMf5GGFvmtOGTZ/zT8cRoizQKcZHn934Dj4g/SX4zDY1z75tGj2Uw65HYfsbfdP1K82OFGSXYOPRn7Oao6YYdvL96nd9sGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c2fed72965f703107f4465ea6b8368a6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>b7df2a53-de34-4768-bff4-86560399a81c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>3610147740f703107f44ffe0597fe28d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>708a1dca-4161-4dbb-88f0-b75ffec2a13b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Wf0yhN2hL6hmBISEAnWlWaJhTd2g615tiZ7QBd1P++6zht0WDa0HjcW3Lu1zk39ygt0Y2rG2eX+sxa8aDI7Ot9RITyGD63REHFyYxQrZhwQquiAyLyCLLxgaUBZYH60GAFUjDoHoeDO061YYNL3SiG+UzYWsJ29c4yuhGSGd7zqsHgdMcNmbW/hATDrmUC5eiUjmiWTrM0SdJ8PFpPs/UoZRlwyLChhDWXmHq+FzS47pDot0rdtva4dUaoh/79uu+y2IPI2bMaJRHhz44rxpFPCdLyiFSgUJ422wNiOLC5kkdgI5TDdsQnP1vxAwemk4lPLDlKpDwED69Fv84AlxfgAKk01DWmT6UbLSi3YTmMl9BId/4SCwnz2ksNJQ7Wcl+tZVOp27ARcmiw/3qINBZJ8Nor9dR7HeVio5/u9iwvheq20gelpiAPb+Bwd+vGeT4t4ZJX2KiooK5xo0Vt9KPoipFLFT/ghfC4lPoJh/o7jcPtxLhYiC8Rv+jgFRjhVdxgGywONNdgBS26m8Z2uCZOdhGxW3suwdqjSNxu8b3xFIPkXlwR9uNLqBG1O8PJj7zXsYteW+SFO9r2BOj4JM2zIc0ZHY5TSIZ5wmHIWJ6zjE5GyWkeh6OP3dEUhWC73dXidr78dPN5+eW1gT6w8/s8dgqTEntP3vbYePqWx95w1zuNlf7BWP6r/qWvkiT5b6x/NpawRbBDr60b/oG+uvcmCjMPu6bCIrWlx672fygf2OJxCfoSetLmmxd1xHY/AU1suhnrBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">18d329d3e53b03107f44a85fbcd50735</block>
+        <comment/>
+        <connected_to>708a1dca-4161-4dbb-88f0-b75ffec2a13b</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>b7df2a53-de34-4768-bff4-86560399a81c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>7610147740f703107f44ffe0597fe28e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>0361813f-d145-4f40-8e94-1812074ebe75</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">42fed72965f703107f4465ea6b8368ab</block>
+        <comment/>
+        <connected_to>b7df2a53-de34-4768-bff4-86560399a81c</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BOP - Case Intake Orchestrator">6610147740f703107f44ffe0597fe261</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>2f48ab0d-cba8-4f95-ba9a-9fe2e8ef8d53</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>7e10147740f703107f44ffe0597fe29b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <ui_id>bd976810-cd91-455d-969b-5719aaf8ff0b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6610147740f703107f44ffe0597fe261"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6610147740f703107f44ffe0597fe261"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6610147740f703107f44ffe0597fe261</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>e610147740f703107f44ffe0597fe274</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6610147740f703107f44ffe0597fe261</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:19</sys_created_on>
+        <sys_id>fe10147740f703107f44ffe0597fe27f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6610147740f703107f44ffe0597fe261"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6610147740f703107f44ffe0597fe261"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>c41c1d45307f03107f44f54bcdda0213</sys_id>
+        <latest_snapshot>6610147740f703107f44ffe0597fe261</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-hotfix1-06-18-2026_06-19-2026_0938.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c41c1d45307f03107f44f54bcdda0213^sys_idNOT IN7210147740f703107f44ffe0597fe2d6"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"7210147740f703107f44ffe0597fe2d6","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>c41c1d45307f03107f44f54bcdda0213</plan_id>
+        <snapshot>6e70d0b740f703107f44ffe0597fe22b</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 15:55:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7210147740f703107f44ffe0597fe2d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 15:55:20</sys_updated_on>
+        <trigger display_value="">ba10147740f703107f44ffe0597fe2d3</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c41c1d45307f03107f44f54bcdda0213"/>
+</record_update>
