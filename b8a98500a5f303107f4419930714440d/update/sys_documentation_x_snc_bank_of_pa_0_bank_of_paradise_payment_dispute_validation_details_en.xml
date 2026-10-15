@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="validation_details" label="Validation Details" language="en" table="x_snc_bank_of_pa_0_bank_of_paradise_payment_dispute">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>validation_details</element>
+            <help/>
+            <hint/>
+            <label>Validation Details</label>
+            <language>en</language>
+            <name>x_snc_bank_of_pa_0_bank_of_paradise_payment_dispute</name>
+            <plural>Validation Details</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-06 04:52:45</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Validation Details</sys_name>
+            <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_bank_of_pa_0_bank_of_paradise_payment_dispute_validation_details_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:52:45</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

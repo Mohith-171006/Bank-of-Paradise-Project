@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="0d55b95505f303107f4442f8daf9327c" sys_domain="global" table="sys_decision_multi_result_element" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-07 04:52:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d55b95505f303107f4442f8daf932cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_decision_multi_result_element" name="sys_decision_multi_result_element" sys_domain="global" view="Default view">0d55b95505f303107f4442f8daf9327c</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sys_decision_multi_result_element" sys_domain="global" view="Default view">1d55b95505f303107f4442f8daf932b3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-07 04:52:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-07 04:52:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d955b95505f303107f4442f8daf932b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_decision_multi_result_element" name="sys_decision_multi_result_element" sys_domain="global" view="Default view">0d55b95505f303107f4442f8daf9327c</sys_ui_form>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_decision_multi_result_element" sys_domain="global" view="Default view">8955b95505f303107f4442f8daf93284</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-07 04:52:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-07 04:52:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5555b95505f303107f4442f8daf932da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_decision_multi_result_element" name="sys_decision_multi_result_element" sys_domain="global" view="Default view">0d55b95505f303107f4442f8daf9327c</sys_ui_form>
+            <sys_ui_section caption="Choice List Specification" display_value="Choice List Specification" name="sys_decision_multi_result_element" sys_domain="global" view="Default view">1955b95505f303107f4442f8daf932d4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-07 04:52:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-07 04:52:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9155b95505f303107f4442f8daf932d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_decision_multi_result_element" name="sys_decision_multi_result_element" sys_domain="global" view="Default view">0d55b95505f303107f4442f8daf9327c</sys_ui_form>
+            <sys_ui_section caption="Default Value" display_value="Default Value" name="sys_decision_multi_result_element" sys_domain="global" view="Default view">1555b95505f303107f4442f8daf932ce</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-07 04:52:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sys_decision_multi_result_element</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-07 04:52:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d55b95505f303107f4442f8daf9327c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_decision_multi_result_element</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+            <sys_update_name>sys_ui_form_sections_0d55b95505f303107f4442f8daf9327c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-07 04:52:46</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

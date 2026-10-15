@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_case_type">
+    <sn_case_type action="INSERT_OR_UPDATE">
+        <case_type_table>x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction</case_type_table>
+        <category/>
+        <internal_name>x_snc_bank_of_pa_0.x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction</internal_name>
+        <short_description>Handles failed, declined, or unsuccessful banking transactions for Bank of Paradise customers.</short_description>
+        <subtype/>
+        <sys_class_name>sn_case_type</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-03 08:10:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>10ebf508a5bb03107f441993071444eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction</sys_name>
+        <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_update_name>sn_case_type_10ebf508a5bb03107f441993071444eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-03 08:10:32</sys_updated_on>
+    </sn_case_type>
+</record_update>

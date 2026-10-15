@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="df3bb1c4a5bb03107f4419930714448c" extends="sn_customerservice_case" label="Bank of Paradise - Payment Dispute" max_length="40" name="x_snc_bank_of_pa_0_bank_of_paradise_payment_dispute" type="collection">
+        <element choice="1" label="Dispute Reason" mandatory="true" max_length="40" name="dispute_reason" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Incorrect Amount" sequence="300" value="incorrect_amount"/>
+                <element inactive_on_update="false" label="Other" sequence="600" value="other"/>
+                <element inactive_on_update="false" label="Merchant Dispute" sequence="500" value="merchant_dispute"/>
+                <element inactive_on_update="false" label="Failed/Incomplete Payment" sequence="400" value="failed_incomplete_payment"/>
+                <element inactive_on_update="false" label="Unauthorized Payment" sequence="100" value="unauthorized_payment"/>
+                <element inactive_on_update="false" label="Duplicate Charge" sequence="200" value="duplicate_charge"/>
+            </choice>
+        </element>
+        <element label="AI Intent" max_length="4000" name="ai_intent" type="string"/>
+        <element label="Bank Account" mandatory="true" max_length="32" name="bank_account" reference="x_snc_bank_of_pa_0_bank_of_paradise_bank_account" type="reference"/>
+        <element label="Validation Details" max_length="4000" name="validation_details" type="string"/>
+        <element label="Transaction" mandatory="true" max_length="32" name="transaction" reference="x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction" type="reference"/>
+        <element choice="1" label="Validation Status" mandatory="true" max_length="40" name="validation_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Verification Required" sequence="400" value="verification_required"/>
+                <element inactive_on_update="false" label="Passed" sequence="200" value="passed"/>
+                <element inactive_on_update="false" label="Failed" sequence="300" value="failed"/>
+                <element inactive_on_update="false" label="Pending" sequence="100" value="pending"/>
+            </choice>
+        </element>
+        <element label="Routing Reason" max_length="500" name="routing_reason" type="string"/>
+        <element label="Disputed Amount" mandatory="true" max_length="20" name="disputed_amount" type="currency"/>
+        <element label="AI Summary" max_length="4000" name="ai_summary" type="string"/>
+    </element>
+</database>

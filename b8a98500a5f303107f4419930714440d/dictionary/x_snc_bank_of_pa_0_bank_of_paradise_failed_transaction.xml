@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="94fe010ca53703107f441993071444ce" extends="sn_customerservice_case" label="Bank of Paradise - Failed Transaction" max_length="40" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" type="collection">
+        <element label="AI Intent" max_length="100" name="ai_intent" type="string"/>
+        <element label="Routing Reason" max_length="500" name="routing_reason" type="string"/>
+        <element label="AI Summary" max_length="4000" name="ai_summary" type="string"/>
+        <element label="Transaction" mandatory="true" max_length="32" name="transaction" reference="x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction" type="reference"/>
+        <element label="Validation Details" max_length="4000" name="validation_details" type="string"/>
+        <element choice="1" label="Validation Status" mandatory="true" max_length="40" name="validation_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Failed" sequence="300" value="failed"/>
+                <element inactive_on_update="false" label="Passed" sequence="200" value="passed"/>
+                <element inactive_on_update="false" label="Pending" sequence="100" value="pending"/>
+                <element inactive_on_update="false" label="Verification Required" sequence="400" value="verification_required"/>
+            </choice>
+        </element>
+        <element label="Bank Account" mandatory="true" max_length="32" name="bank_account" reference="x_snc_bank_of_pa_0_bank_of_paradise_bank_account" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-03 08:05:39</sys_created_on>
+        <sys_id>d71b3d84a5bb03107f4419930714447a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_bank_of_pa_0_bank_of_paradise_card_security.x_snc_bank_of_pa_0.bank_of_paradise_card_security_user</sys_name>
+        <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+        <sys_security_acl display_value="x_snc_bank_of_pa_0_bank_of_paradise_card_security">c31b3d84a5bb03107f44199307144463</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d71b3d84a5bb03107f4419930714447a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-03 08:05:39</sys_updated_on>
+        <sys_user_role display_value="x_snc_bank_of_pa_0.bank_of_paradise_card_security_user" name="x_snc_bank_of_pa_0.bank_of_paradise_card_security_user">071bf984a5bb03107f441993071444aa</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

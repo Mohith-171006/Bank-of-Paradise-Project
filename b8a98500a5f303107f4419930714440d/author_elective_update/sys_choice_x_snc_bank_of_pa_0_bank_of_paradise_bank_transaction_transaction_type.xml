@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="transaction_type" table="x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>transaction_type</element>
+            <name>x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-03 07:19:15</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>transaction_type</sys_name>
+            <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+            <sys_update_name>sys_choice_x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction_transaction_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-03 07:19:15</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UPI</label>
+            <language>en</language>
+            <name>x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-03 07:19:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-03 07:20:53</sys_updated_on>
+            <value>upi</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Card</label>
+            <language>en</language>
+            <name>x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-03 07:19:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-03 07:21:02</sys_updated_on>
+            <value>card</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NEFT</label>
+            <language>en</language>
+            <name>x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-03 07:19:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-03 07:21:07</sys_updated_on>
+            <value>neft</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IMPS</label>
+            <language>en</language>
+            <name>x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-03 07:19:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-03 07:21:16</sys_updated_on>
+            <value>imps</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ATM</label>
+            <language>en</language>
+            <name>x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-03 07:19:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-03 07:21:24</sys_updated_on>
+            <value>atm</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>POS</label>
+            <language>en</language>
+            <name>x_snc_bank_of_pa_0_bank_of_paradise_bank_transaction</name>
+            <sequence>600</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-03 07:19:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-03 07:21:31</sys_updated_on>
+            <value>pos</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

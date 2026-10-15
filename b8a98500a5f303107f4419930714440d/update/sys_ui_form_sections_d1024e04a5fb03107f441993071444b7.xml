@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="d1024e04a5fb03107f441993071444b7" sys_domain="global" table="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-06 04:23:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>08f464cd303703107f44f54bcdda025b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">d1024e04a5fb03107f441993071444b7</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">48f424cd303703107f44f54bcdda02fe</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:23:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-05 03:37:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ec015f24603703107f44caca4178d4af</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">d1024e04a5fb03107f441993071444b7</sys_ui_form>
+            <sys_ui_section caption="Case Information" display_value="Case Information" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">58015f24603703107f44caca4178d4aa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:23:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-05 04:35:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae1e1be8607b03107f44caca4178d44e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">d1024e04a5fb03107f441993071444b7</sys_ui_form>
+            <sys_ui_section caption="Description" display_value="Description" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">c21ed7e8607b03107f44caca4178d449</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:23:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-05 04:35:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e21e1be8607b03107f44caca4178d460</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">d1024e04a5fb03107f441993071444b7</sys_ui_form>
+            <sys_ui_section caption="Banking Details" display_value="Banking Details" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">061ed7e8607b03107f44caca4178d44b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:23:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-05 04:35:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>661e1be8607b03107f44caca4178d465</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">d1024e04a5fb03107f441993071444b7</sys_ui_form>
+            <sys_ui_section caption="AI Assessment" display_value="AI Assessment" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">ca1ed7e8607b03107f44caca4178d44c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:23:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-05 04:35:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea1e1be8607b03107f44caca4178d46a</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">d1024e04a5fb03107f441993071444b7</sys_ui_form>
+            <sys_ui_section caption="Validation" display_value="Validation" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">821ed7e8607b03107f44caca4178d44e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:23:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-05 04:35:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>661e1be8607b03107f44caca4178d470</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">d1024e04a5fb03107f441993071444b7</sys_ui_form>
+            <sys_ui_section caption="Routing" display_value="Routing" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">c21ed7e8607b03107f44caca4178d49a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:23:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-05 04:35:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f21e1be8607b03107f44caca4178d476</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">d1024e04a5fb03107f441993071444b7</sys_ui_form>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">8a1ed7e8607b03107f44caca4178d49b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:23:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-05 04:35:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3e1e1be8607b03107f44caca4178d488</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">d1024e04a5fb03107f441993071444b7</sys_ui_form>
+            <sys_ui_section caption="Notes &amp; Activities" display_value="Notes &amp; Activities" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">421ed7e8607b03107f44caca4178d49d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:23:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-03 08:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>21024e04a5fb03107f441993071444e8</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">d1024e04a5fb03107f441993071444b7</sys_ui_form>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction" sys_domain="global" view="e6d985c378c747107f444c47dad882d2">51024e04a5fb03107f441993071444ba</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-06 04:23:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-03 08:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d1024e04a5fb03107f441993071444b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_bank_of_pa_0_bank_of_paradise_failed_transaction</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Bank of Paradise Banking Service" source="x_snc_bank_of_pa_0">b8a98500a5f303107f4419930714440d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bank of Paradise Banking Service">b8a98500a5f303107f4419930714440d</sys_scope>
+            <sys_update_name>sys_ui_form_sections_d1024e04a5fb03107f441993071444b7</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-03 08:35:50</sys_updated_on>
+            <sys_user/>
+            <view display_value="Case" name="case">e6d985c378c747107f444c47dad882d2</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
